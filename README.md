@@ -9,4 +9,4 @@
 ###### This is a H6
 
 
-<img src="screen.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="lottto"></img><br/>
+<img src="https://github.com/kairos6/lotto/blob/main/screen.JPG" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="lottto"></img><br/>
