@@ -35,7 +35,7 @@ public class RandomNumberMaker extends JFrame{
 	int[] number = new int[6];
 	int num;
 	public RandomNumberMaker() {
-		setTitle("·Î¶Ç»ı¼º");
+		setTitle("ë¡œë˜ìƒì„±");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = getContentPane();
 		contentPane.setLayout(new BorderLayout());
@@ -44,27 +44,27 @@ public class RandomNumberMaker extends JFrame{
 		Center.setLayout(new GridLayout(2,3,8,8));
 		btn1 = new JButton("1");		
 		btn1.setBackground(Color.WHITE);
-		btn1.setFont(new Font("°íµñÃ¼", Font.BOLD, 35));
+		btn1.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 35));
 		Center.add(btn1);
 		btn2 = new JButton("2");
 		btn2.setBackground(Color.WHITE);
-		btn2.setFont(new Font("°íµñÃ¼", Font.BOLD, 35));
+		btn2.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 35));
 		Center.add(btn2);
 		btn3 = new JButton("3");
 		btn3.setBackground(Color.WHITE); 
-		btn3.setFont(new Font("°íµñÃ¼", Font.BOLD, 35));
+		btn3.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 35));
 		Center.add(btn3);
 		btn4 = new JButton("4");
 		btn4.setBackground(Color.WHITE);
-		btn4.setFont(new Font("°íµñÃ¼", Font.BOLD, 35));
+		btn4.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 35));
 		Center.add(btn4);
 		btn5 = new JButton("5");
 		btn5.setBackground(Color.WHITE);
-		btn5.setFont(new Font("°íµñÃ¼", Font.BOLD, 35));
+		btn5.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 35));
 		Center.add(btn5);
 		btn6 = new JButton("6");
 		btn6.setBackground(Color.WHITE);
-		btn6.setFont(new Font("°íµñÃ¼", Font.BOLD, 35));
+		btn6.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 35));
 		Center.add(btn6);
 		
 		contentPane.add(Center,BorderLayout.CENTER);
@@ -73,7 +73,7 @@ public class RandomNumberMaker extends JFrame{
 		South.setLayout(new BorderLayout(30, 0));		
 		textfield = new TextField();
 		South.add(textfield,BorderLayout.CENTER);
-		btn = new JButton("¼ıÀÚ»ı¼º");
+		btn = new JButton("ìˆ«ììƒì„±");
 		btn.addMouseListener(new MyMouseListener());
 		btn.setBackground(Color.WHITE);
 		South.add(btn,BorderLayout.EAST);
@@ -99,25 +99,25 @@ public class RandomNumberMaker extends JFrame{
 				}
 			}
 			
-			//¼ö Ãâ·Â
+			//ìˆ˜ ì¶œë ¥
 			for(int n=0;n<6;n++)
 			{								
-				String bt1 = String.valueOf(number[0]); //number ¹è¿­ÀÇ 0¹øÂ°¸¦ StringÀ¸·Î Çüº¯È¯
-				btn1.setText(bt1); //btn1¿¡ bt1À» Ãâ·Â
-				String bt2 = String.valueOf(number[1]);//number ¹è¿­ÀÇ 1¹øÂ°¸¦ StringÀ¸·Î Çüº¯È¯
-				btn2.setText(bt2); //btn2¿¡ bt2À» Ãâ·Â
-				String bt3 = String.valueOf(number[2]);//number ¹è¿­ÀÇ 2¹øÂ°¸¦ StringÀ¸·Î Çüº¯È¯
-				btn3.setText(bt3); //btn3¿¡ bt3À» Ãâ·Â
-				String bt4 = String.valueOf(number[3]);//number ¹è¿­ÀÇ 3¹øÂ°¸¦ StringÀ¸·Î Çüº¯È¯
-				btn4.setText(bt4); //btn4¿¡ bt4À» Ãâ·Â
-				String bt5 = String.valueOf(number[4]);//number ¹è¿­ÀÇ 4¹øÂ°¸¦ StringÀ¸·Î Çüº¯È¯
-				btn5.setText(bt5); //btn5¿¡ bt5À» Ãâ·Â
-				String bt6 = String.valueOf(number[5]);//number ¹è¿­ÀÇ 5¹øÂ°¸¦ StringÀ¸·Î Çüº¯È¯
-				btn6.setText(bt6); //btn6¿¡ bt6À» Ãâ·Â
+				String bt1 = String.valueOf(number[0]); 
+				btn1.setText(bt1); 
+				String bt2 = String.valueOf(number[1]);
+				btn2.setText(bt2);
+				String bt3 = String.valueOf(number[2]);
+				btn3.setText(bt3); 
+				String bt4 = String.valueOf(number[3]);
+				btn4.setText(bt4);
+				String bt5 = String.valueOf(number[4]);
+				btn5.setText(bt5);
+				String bt6 = String.valueOf(number[5]);
+				btn6.setText(bt6);
 				
-				String nm = Arrays.toString(number).replaceAll("[^0-9 ]",""); //int¹è¿­ String ¹è¿­·Î º¯È¯
-				textfield.setText(nm); //textfield¿¡ ¹è¿­ Ãâ·Â				
-				textfield.setFont(new Font("°íµñÃ¼", Font.BOLD, 17));	//textfield Ãâ·Â ÆùÆ® º¯°æ
+				String nm = Arrays.toString(number).replaceAll("[^0-9 ]",""); 
+				textfield.setText(nm);				
+				textfield.setFont(new Font("ê³ ë”•ì²´", Font.BOLD, 17));	
 			}
 		}
 
