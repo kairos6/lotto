@@ -81,8 +81,6 @@ public class RandomNumberMaker extends JFrame{
 			
 		setSize(400, 300);
 		setVisible(true);
-		
-		//System.out.print(""+(int)(Math.random()*45)+1);
 	}
 	class MyMouseListener implements MouseListener {
 
@@ -98,8 +96,6 @@ public class RandomNumberMaker extends JFrame{
 					}
 				}
 			}
-			
-			//수 출력
 			for(int n=0;n<6;n++)
 			{								
 				String bt1 = String.valueOf(number[0]); 
